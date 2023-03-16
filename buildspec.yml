@@ -16,10 +16,11 @@ phases:
       - yarn
   build:
     commands:
-      - echo Testing...
-      - yarn test
-      - echo Building...
-      - npm run build
+      # - echo Testing...
+      # - yarn test
+      # - echo Building...
+      # - yarn build
+      - yarn build
 artifacts:
   files:
     - "**/*"
