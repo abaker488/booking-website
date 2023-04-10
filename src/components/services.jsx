@@ -37,6 +37,11 @@ export const Services = (props) => {
     };
     
     fetch("https://rj8n8gh58l.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
+    .then(response => response.text())
+    .then(result => alert(JSON.parse(result).body))
+    .catch(error => console.log('error', error));
+  
+    /*  
       .then(
         (result) => {
           console.log(result.text);
@@ -46,6 +51,8 @@ export const Services = (props) => {
           console.log(error.text);
         }
       );
+    */
+
   };
 
   return (
