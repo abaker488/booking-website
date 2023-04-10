@@ -126,7 +126,7 @@ export const Services = (props) => {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="form-group">Must be in format +19876543210
+                    <div className="form-group">Must be a name
                     </div>
                   </div>
                 </div>          
