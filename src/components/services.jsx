@@ -39,7 +39,7 @@ export const Services = (props) => {
     fetch("https://ax8odrofcf.execute-api.us-east-1.amazonaws.com/dev/add_emp", requestOptions)
     .then(response => response.text())
     // .then(result => alert(JSON.parse(result).body)) 
-    .then(result => console.log(body))
+    .then(result => console.log(JSON.parse(result).body))
     .catch(error => console.log('error', error));
   
     /*  
