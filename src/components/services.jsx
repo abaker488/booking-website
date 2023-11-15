@@ -36,7 +36,7 @@ export const Services = (props) => {
       redirect: 'follow'
     };
     
-    fetch("https://9o7k021nnl.execute-api.us-east-1.amazonaws.com/dev/add_emp", requestOptions)
+    fetch("https://ax8odrofcf.execute-api.us-east-1.amazonaws.com/dev/add_emp", requestOptions)
     .then(response => response.text())
     .then(result => alert(JSON.parse(result).body))
     .catch(error => console.log('error', error));
